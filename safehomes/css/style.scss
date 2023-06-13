@@ -1,0 +1,128 @@
+/* 반응형, 브라우저 크기 : ~ 480px */
+/* 반응형, 브라우저 크기 : 480px ~ 767px */
+/* 반응형, 브라우저 크기 : 768px ~ 1023px */
+/* 반응형, 브라우저 크기 : 1024px ~ 1920px */
+/* 반응형, 브라우저 크기 : 1920px ~ */
+
+$primary: #0e7159;
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 24px;
+}
+h4{
+  font-size: 21px;
+}
+header {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main {
+  width: 100%;
+}
+.img-wrapper {
+  margin: 10px auto;
+  position: relative;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 768px;
+  vertical-align: middle;
+  filter: brightness(0.2);
+}
+.main-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+}
+.main-text h3 {
+  font-weight: normal;
+  padding-top: 50px;
+}
+.main-box, .main-box-2{
+  height: 677px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sub-title {
+  color: $primary;
+}
+.sub-title p {
+  font-weight: normal;
+}
+.sub-box {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.small-box {
+  width: 293px;
+}
+.small-number {
+  color: $primary;
+  font-weight: bold;
+}
+.small-img {
+  width: 100%;
+}
+.small-text {
+  color: #6b7684;
+}
+.sub-text {
+  color: $primary;
+}
+#btn1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: #333d4b;
+  margin-right: 15px;
+}
+#btn2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  background-color: $primary;
+  font-weight: bold;
+  color: white;
+  padding: 8px 23px;
+}
+.phone-img{
+  width: 335px;
+}
+.sub-box-2 {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+.small-box-2{
+  width: 20%;
+}
