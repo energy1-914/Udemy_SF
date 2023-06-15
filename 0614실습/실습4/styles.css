@@ -28,10 +28,16 @@ section {
   width: 320px;
   border-radius: 0.25rem;
   box-shadow: 2px 2px 9px lightgray;
+  overflow: hidden;
 }
 
 img {
   width: 100%;
+  transition: all 0.2s linear;
+}
+
+img:hover {
+  transform: scale(1.2);
 }
 
 .group-img {
