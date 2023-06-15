@@ -29,6 +29,7 @@ section {
   border-radius: 0.25rem;
   box-shadow: 2px 2px 9px lightgray;
   overflow: hidden;
+  cursor: pointer;
 }
 
 img {
@@ -116,5 +117,3 @@ p {
   border-radius: 0.5rem;
   text-align: center;
 }
-
-/*# sourceMappingURL=styles.css.map */
