@@ -1,31 +1,22 @@
 @charset "UTF-8";
-/* 반응형, 브라우저 크기 : ~ 480px */
 /* 반응형, 브라우저 크기 : 480px ~ 767px */
 /* 반응형, 브라우저 크기 : 768px ~ 1023px */
 /* 반응형, 브라우저 크기 : 1024px ~ 1920px */
 /* 반응형, 브라우저 크기 : 1920px ~ */
+/* 반응형, 브라우저 크기 : 480px ~ 767px */
+/* 반응형, 브라우저 크기 : 768px ~ 1023px */
+/* 반응형, 브라우저 크기 : 1024px ~ 1920px */
+/* 반응형, 브라우저 크기 : 1920px ~ */
+/*반응형, 브라우저 크기가 481px 이상 767px 이하일때*/
+/*반응형, 브라우저 크기가 768px 이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상, 1919px 이하일때*/
+/*반응형, 브라우저 크기가 1920px 이상일때*/
 body {
   margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 21px;
 }
 
 header {
@@ -67,7 +58,8 @@ main {
   padding-top: 50px;
 }
 
-.main-box, .main-box-2 {
+.main-box,
+.main-box-2 {
   height: 677px;
   display: flex;
   flex-direction: column;
@@ -80,7 +72,7 @@ main {
   color: #0e7159;
 }
 
-.sub-title p {
+.sub-title span {
   font-weight: normal;
 }
 
@@ -89,6 +81,12 @@ main {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.sub-box-3 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
 }
 
 .small-box {
@@ -148,6 +146,65 @@ main {
 
 .small-box-2 {
   width: 20%;
+}
+
+.small-box-3 {
+  background-color: #F2F3F4;
+  border-radius: 16px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /*반응형, 브라우저 크기가 481px 이상 767px 이하일때*/
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*반응형, 브라우저 크기가 768px 이상, 1023px 이하일때*/
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1919px) {
+  /*반응형, 브라우저 크기가 1024px 이상, 1919px 이하일때*/
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1920px) {
+  /*반응형, 브라우저 크기가 1920px 이상일때*/
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+    display: inline;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

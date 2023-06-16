@@ -1,28 +1,15 @@
-/* 반응형, 브라우저 크기 : ~ 480px */
 /* 반응형, 브라우저 크기 : 480px ~ 767px */
 /* 반응형, 브라우저 크기 : 768px ~ 1023px */
 /* 반응형, 브라우저 크기 : 1024px ~ 1920px */
 /* 반응형, 브라우저 크기 : 1920px ~ */
 
-$primary: #0e7159;
+@import "./utils";
 body {
   margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-h1 {
-  font-size: 60px;
-}
-h2 {
-  font-size: 48px;
-}
-h3 {
-  font-size: 24px;
-}
-h4{
-  font-size: 21px;
 }
 header {
   width: 100%;
@@ -57,7 +44,8 @@ main {
   font-weight: normal;
   padding-top: 50px;
 }
-.main-box, .main-box-2{
+.main-box,
+.main-box-2 {
   height: 677px;
   display: flex;
   flex-direction: column;
@@ -68,7 +56,7 @@ main {
 .sub-title {
   color: $primary;
 }
-.sub-title p {
+.sub-title span {
   font-weight: normal;
 }
 .sub-box {
@@ -76,6 +64,11 @@ main {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+.sub-box-3 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
 }
 .small-box {
   width: 293px;
@@ -114,7 +107,7 @@ main {
   color: white;
   padding: 8px 23px;
 }
-.phone-img{
+.phone-img {
   width: 335px;
 }
 .sub-box-2 {
@@ -123,6 +116,65 @@ main {
   justify-content: space-between;
   gap: 10%;
 }
-.small-box-2{
+.small-box-2 {
   width: 20%;
+}
+.small-box-3 {
+  background-color:  #F2F3F4;
+  border-radius: 16px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+@include mobile {
+  /*반응형, 브라우저 크기가 481px 이상 767px 이하일때*/
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 24px;
+}
+}
+@include tablet{
+  /*반응형, 브라우저 크기가 768px 이상, 1023px 이하일때*/
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+@include desktop1 {
+  /*반응형, 브라우저 크기가 1024px 이상, 1919px 이하일때*/
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@include desktop2 {
+  /*반응형, 브라우저 크기가 1920px 이상일때*/
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+    display: inline;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }

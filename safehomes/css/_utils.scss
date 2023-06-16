@@ -1,0 +1,39 @@
+/* 반응형, 브라우저 크기 : 480px ~ 767px */
+/* 반응형, 브라우저 크기 : 768px ~ 1023px */
+/* 반응형, 브라우저 크기 : 1024px ~ 1920px */
+/* 반응형, 브라우저 크기 : 1920px ~ */
+
+$primary: #0e7159;
+
+$mobile1: 480px;
+$tablet: 767px;
+$desktop1: 1023px;
+$desktop2: 1919px;
+
+/*반응형, 브라우저 크기가 481px 이상 767px 이하일때*/
+@mixin mobile {
+  @media (min-width: #{$mobile1 + 1px}) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 768px 이상, 1023px 이하일때*/
+@mixin tablet {
+  @media (min-width: #{$tablet + 1px}) and (max-width: $desktop1) {
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1024px 이상, 1919px 이하일때*/
+@mixin desktop1 {
+  @media (min-width: #{$desktop1 + 1px}) and (max-width: $desktop2) {
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1920px 이상일때*/
+@mixin desktop2 {
+  @media (min-width: #{$desktop2 + 1px}) {
+    @content;
+  }
+}
