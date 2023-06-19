@@ -5,11 +5,9 @@
 
 @import "./utils";
 body {
+  width: 100%;
   margin: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: "Spoqa Han Sans Neo";
 }
 header {
   width: 100%;
@@ -20,58 +18,183 @@ header {
 }
 main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
 }
-.img-wrapper {
+.main-img {
   margin: 10px auto;
-  position: relative;
-}
-.img-wrapper img {
   width: 100%;
-  height: 768px;
-  vertical-align: middle;
-  filter: brightness(0.2);
-}
-.main-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding-top: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_1280.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
 }
-.main-text h3 {
-  font-weight: normal;
-  padding-top: 50px;
+.main-img h3 {
+  display: none;
 }
-.main-box,
-.main-box-2 {
-  height: 677px;
+.main-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
+.main-last {
+  width: 100%;
+  padding: 164px 0px;
+  background-color: $primary;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-last button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  color: $primary;
+  background-color: white;
+  font-weight: bold;
+  padding: 21px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 .sub-title {
   color: $primary;
+  white-space: nowrap;
+  // width: 100%;
 }
 .sub-title span {
   font-weight: normal;
 }
 .sub-box {
-  width: 50%;
   display: flex;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 48px;
   flex-wrap: wrap;
 }
-.sub-box-3 {
+
+.sub-box-2 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.message {
+  border-radius: 13px;
+  background: rgba(245, 245, 245, 0.6);
+  padding: 12px;
+
+  backdrop-filter: blur(27.1828px);
+}
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // color: rgba(0, 0, 0, 0.05);
+  color: rgba(63, 63, 63, 0.3);
+}
+.message-img-group {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+}
+.message img {
+  border-radius: 4px;
+}
+.message h4 {
+  margin: 9px 0px 2px;
+  font-size: 15px;
+}
+.message p {
+  margin: 0px 0px 9px;
+  font-size: 15px;
+}
+#message-2 {
+  margin-top: 17px;
+  opacity: 0.5;
+}
+.sub-box-3 {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.sub-box-4 {
   display: flex;
   gap: 20px;
 }
 .small-box {
   width: 293px;
+}
+.small-box-2 {
+  width: 453px;
+  height: 628px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small-box-2 h2 {
+  color: $text;
+  letter-spacing: -1.79578px;
+  line-height: 58px;
+}
+.small-box-3 {
+  width: 292px;
+  padding: 24px;
+  background-color: $background;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.small-box-3 span {
+  font-size: 24px;
+  margin: 5px 0px;
+}
+.small-box-3 button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 23px 86px;
+  background-color: $primary;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.small-text-3 {
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.598595px;
+  margin: 10px 0px;
+  color: $grey;
+}
+.small-box-3 strong {
+  color: $primary;
+  font-size: 32px;
+  margin-top: 18px;
+}
+.small-box-4 {
+  padding: 60px;
 }
 .small-number {
   color: $primary;
@@ -81,7 +204,8 @@ main {
   width: 100%;
 }
 .small-text {
-  color: #6b7684;
+  color: $grey;
+  font-size: 24px;
 }
 .sub-text {
   color: $primary;
@@ -93,8 +217,9 @@ main {
   border: none;
   background-color: transparent;
   font-weight: bold;
-  color: #333d4b;
+  color: $text;
   margin-right: 15px;
+  cursor: pointer;
 }
 #btn2 {
   -webkit-appearance: none;
@@ -106,22 +231,18 @@ main {
   font-weight: bold;
   color: white;
   padding: 8px 23px;
+  cursor: pointer;
 }
 .phone-img {
   width: 335px;
 }
-.sub-box-2 {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10%;
-}
-.small-box-2 {
-  width: 20%;
-}
-.small-box-3 {
-  background-color:  #F2F3F4;
+.small-box-4 {
+  background-color: $background;
   border-radius: 16px;
+}
+footer p {
+  color: $grey;
+  margin-bottom: 24px;
 }
 
 h4 {
@@ -129,19 +250,73 @@ h4 {
 }
 
 @include mobile {
-  /*반응형, 브라우저 크기가 481px 이상 767px 이하일때*/
-h1 {
-  font-size: 24px;
+  /*반응형, 브라우저 크기가 767px 이하일때*/
+  body {
+    min-width: 480px;
+  }
+  .main-box {
+    width: 480px;
+  }
+  .main-img {
+    padding: 61px 0px;
+  }
+  .sub-box {
+    display: flex;
+    flex-direction: column;
+  }
+  #sub-box-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sub-box-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .small-box-4 {
+    // width: 560px;
+    padding: 30px;
+  }
+  #small-box-4-hid,
+  #small-box-4-hid-1 {
+    display: none;
+  }
+  footer {
+    margin-left: 45px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }
-h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 24px;
-}
-}
-@include tablet{
+@include tablet {
   /*반응형, 브라우저 크기가 768px 이상, 1023px 이하일때*/
+
+  .main-box {
+    width: 634px;
+  }
+  .main-img {
+    padding: 102px 0px;
+  }
+  #sub-box-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sub-box-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #small-box-4-hid,
+  #small-box-4-hid-1 {
+    display: none;
+  }
+  footer {
+    margin-left: 45px;
+  }
   h1 {
     font-size: 36px;
   }
@@ -154,6 +329,30 @@ h3 {
 }
 @include desktop1 {
   /*반응형, 브라우저 크기가 1024px 이상, 1919px 이하일때*/
+
+  .main-box {
+    width: 634px;
+  }
+  .main-img {
+    padding: 138px 0px;
+  }
+  #sub-box-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sub-box-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sub-box-4 {
+   overflow: hidden;
+  }
+  .small-box-4 {
+    width: 560px;
+  }
+  footer {
+    margin-left: 145px;
+  }
   h1 {
     font-size: 48px;
   }
@@ -167,6 +366,32 @@ h3 {
 
 @include desktop2 {
   /*반응형, 브라우저 크기가 1920px 이상일때*/
+
+  .main-box {
+    width: 975px;
+  }
+  .main-img {
+    padding: 265px 0px;
+  }
+  .main-img h3 {
+    display: block;
+    padding-top: 50px;
+  }
+  .sub-box-2 {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .small-box-2 {
+    width: 453px;
+    display: block;
+  }
+  .small-box-4 {
+    width: 560px;
+  }
+  footer {
+    margin-left: 390px;
+  }
   h1 {
     font-size: 60px;
   }
