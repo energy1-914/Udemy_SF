@@ -345,7 +345,7 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
   .sub-box-4 {
-   overflow: hidden;
+    overflow: hidden;
   }
   .small-box-4 {
     width: 560px;
@@ -381,7 +381,9 @@ h4 {
     justify-content: space-between;
     flex-direction: row;
   }
-
+  .sub-box-4 {
+    position: relative;
+  }
   .small-box-2 {
     width: 453px;
     display: block;
@@ -389,6 +391,29 @@ h4 {
   .small-box-4 {
     width: 560px;
   }
+  #tint-1,
+  #tint-2 {
+    width: 120px;
+    height: 100%;
+    position: absolute;
+  }
+  #tint-1 {
+    left: 1%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.819766) 0%,
+      rgba(216, 216, 216, 0.8) 459.2%
+    );
+  }
+  #tint-2 {
+    left: 95%;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.819766) 0%,
+      rgba(216, 216, 216, 0.8) 470.36%
+    );
+  }
+
   footer {
     margin-left: 390px;
   }
