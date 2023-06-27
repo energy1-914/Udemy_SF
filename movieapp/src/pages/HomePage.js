@@ -1,8 +1,8 @@
 import MovieList from "../components/MovieList";
-
+import styles from '../styles/HomePage.module.css'
 const HomePage = () => {
   return (
-    <div>
+    <div className={styles.homepage}> 
       <MovieList />
     </div>
   );

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getMovieList = async () => {
+const MovieListApi = async () => {
   try {
     const data = await axios.get("https://yts.mx/api/v2/list_movies.json");
     return await data["data"]["data"]["movies"];
@@ -8,4 +8,4 @@ const getMovieList = async () => {
     console.log("error :", e);
   }
 };
-export default getMovieList;
+export default MovieListApi;
