@@ -1,0 +1,23 @@
+import useMyContext from "hooks/useMyContext";
+import { useNavigate } from "react-router-dom";
+import styles from "styles/Header.module.css";
+import heartIcon from "images/heart.png";
+import instagramIcon from "images/instagram.png";
+
+const Header = () => {
+  const item = useMyContext().item;
+  const navigate = useNavigate();
+
+  return (
+    <div className={styles.header}>
+      <input type="button" value="<" onClick={() => navigate(-1)} />
+      <h3>{item.name}</h3>
+      <div className={styles.icons}>
+        <img src={instagramIcon} alt="instagramIcon" />
+        <img src={heartIcon} alt="heartIcon" />
+      </div>
+    </div>
+  );
+};
+
+export default Header;

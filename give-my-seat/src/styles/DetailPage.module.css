@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.detail_page {
+  width: 500px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+  color: rgba(143, 143, 144, 1);
+}
+button {
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: rgba(48, 162, 255, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#menu {
+  padding: 0px 5px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgba(143, 143, 144, 1);
+}
+.menu p {
+  margin: 3px;
+}

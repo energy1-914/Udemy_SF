@@ -1,0 +1,29 @@
+.seat_page {
+  width: 500px;
+}
+.background {
+  position: absolute;
+  background-color: rgba(217, 217, 217, 1);
+}
+.seats {
+  padding: 13px;
+  background-color: rgba(248, 248, 248, 1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+.seat {
+  background-color: rgba(217, 217, 217, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.seat_chosen {
+  background-color: rgba(48, 162, 255, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
