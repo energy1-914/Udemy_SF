@@ -6,22 +6,25 @@ const SeatPage = () => {
   const numberSeats = 20;
   const seatList = [];
   const [choose, setChoose] = useState([]);
-  // const toggle = i => {
-  //   if (choose.includes(i)) {
-  //     setChoose(() => choose.filter(x => x !== i));
-  //   } else {
-  //     setChoose(() => choose.push(i));
-  //   }
-  //   console.log(choose);
-  // };
+
+  const toggle = i => {
+    let temporaryArray = [...choose];
+    if (temporaryArray.includes(i)) {
+      setChoose(() => temporaryArray.filter(x => x !== i));
+    } else {
+      temporaryArray.push(i);
+      setChoose(() => temporaryArray);
+    }
+    console.log(choose);
+  };
+
   const getSeat = () => {
     for (let i = 0; i < numberSeats; i++) {
       seatList.push(
         <div
-        className={styles.seat}
-          // className={choose.includes(i) ? styles.seat_chosen : styles.seat}
+          className={choose.includes(i) ? styles.seat_chosen : styles.seat}
           key={i}
-          // onClick={() => toggle(i)}
+          onClick={() => toggle(i)}
         />
       );
     }
