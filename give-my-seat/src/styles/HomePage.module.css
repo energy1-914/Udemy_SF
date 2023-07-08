@@ -1,0 +1,14 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 70px;
+  padding: 50px 100px;
+  border-radius: 8px;
+  background-color: rgb(228, 222, 222);
+  box-shadow: 5px 5px 5px lightgray;
+}
+.homepage button {
+  margin-top: 70px;
+  box-shadow: 5px 5px 5px rgb(175, 172, 172);
+}
