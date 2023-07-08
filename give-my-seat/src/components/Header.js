@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <input type="button" value="<" onClick={() => navigate(-1)} />
+      <input className={styles.button} type="button" value="<" onClick={() => navigate(-1)} />
       <h3>{item.name}</h3>
       <div className={styles.icons}>
         <img src={instagramIcon} alt="instagramIcon" />
