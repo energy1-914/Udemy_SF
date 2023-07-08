@@ -6,6 +6,7 @@ import { createContext } from "react";
 import cafePreview from "images/cafe-preview.png";
 import cafePreview1 from "images/cafe-preview1.png";
 import SeatPage from "pages/SeatPage";
+import LoginPage from "pages/LoginPage";
 
 export const MyContext = createContext();
 
@@ -32,6 +33,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/list" element={<ListPage />} />
           <Route path="/:name" element={<DetailPage />} />
           <Route path="/:name/seat" element={<SeatPage />} />
