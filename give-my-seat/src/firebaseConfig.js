@@ -1,16 +1,12 @@
 import { initializeApp } from "firebase/app";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import firebaseConfig from "util/config";
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app );
 
-export {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-};
+const auth = getAuth();
+
+const userCred = await signInWithPopup(auth, new GoogleAuthProvider());
+
+export { userCred };
 export default auth;
