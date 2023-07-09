@@ -28,7 +28,14 @@ form {
   box-shadow: 5px 5px 5px lightgray;
 }
 .button{
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: rgba(48, 162, 255, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(175, 172, 172);
   margin-top: 20px;
-  padding: 20px;
-  font-size: 16px;
 }

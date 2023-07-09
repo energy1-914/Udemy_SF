@@ -8,8 +8,20 @@ body {
   align-items: center;
   gap: 35px;
 }
+.logout {
+  margin-top: 30px;
+  position: relative;
+  left: 250px;
+  font-weight: bold;
+  padding: 8px 18px;
+  color: white;
+  background-color: rgba(48, 162, 255, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 .title {
-  padding-top: 70px;
+  padding-top: 40px;
   font-size: 25px;
 }
 .list {

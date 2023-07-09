@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className={styles.homepage}>
       <img src={logo} alt="logo" />
-      <button onClick={() => navigate("/login")}>Google 로그인하기</button>
+      <button className={styles.button} onClick={() => navigate("/login")}>Google 로그인하기</button>
       <img src={mainImg} alt="main-img" />
     </div>
   );

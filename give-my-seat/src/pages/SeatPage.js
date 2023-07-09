@@ -15,7 +15,7 @@ const SeatPage = () => {
       temporaryArray.push(i);
       setChoose(() => temporaryArray);
     }
-    console.log(choose);
+    // console.log(choose);
   };
 
   const getSeat = () => {

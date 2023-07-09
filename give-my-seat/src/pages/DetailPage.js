@@ -19,7 +19,7 @@ const DetailPage = () => {
             <p>{item.open}</p>
             <p>{item.call}</p>
           </div>
-          <button onClick={() => navigate(`/${item.name}/seat`)}>
+          <button className={styles.button} onClick={() => navigate(`/${item.name}/seat`)}>
             좌석 현황
           </button>
         </div>
