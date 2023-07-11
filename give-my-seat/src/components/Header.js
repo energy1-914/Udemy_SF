@@ -1,10 +1,11 @@
 import useMyContext from "hooks/useMyContext";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "styles/Header.module.css";
 import heartIcon from "images/heart.png";
 import instagramIcon from "images/instagram.png";
 
-const Header = () => {
+const Header = React.memo(() => {
   const item = useMyContext().item;
   const navigate = useNavigate();
 
@@ -18,6 +19,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Header;
